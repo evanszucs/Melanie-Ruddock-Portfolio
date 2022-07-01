@@ -1,0 +1,365 @@
+/* Phone View */
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#nav-photos, #my-work {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 15% 5% 10%;
+}
+
+#about-me, #contact, #updated {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  padding: 15% 5% 10%;
+}
+
+.title-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 7vw;
+}
+
+/* Nav Bar & Photos*/
+#nav-photos {
+  padding-top: 3%;
+}
+
+.mr-logo {
+  width: 13%;
+}
+
+.title-name {
+  color: #3175cf;
+  font-size: 5.5vw;
+  width: 60%;
+  padding-top: 2.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  align-items: center;
+  margin-right: 7%;
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 4vw;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-inner {
+  padding-top: 7%;
+}
+
+/* About Me */
+.im-melanie {
+  color: #3175cf;
+  font-size: 4vw;
+}
+
+#about-me p {
+  font-size: 2.6vw;
+  padding: 5% 10%;
+  text-align: center;
+  color: #414242;
+}
+
+.picture-collage {
+  visibility: hidden;
+  display: none;
+}
+
+/* My Work */
+.carousel-caption {
+  bottom: 5vh;
+}
+
+.work-text {
+  text-align: center;
+  font-size: 3vw;
+  padding-top: 4%;
+  color: #3175cf;
+  font-weight: bolder;
+}
+
+/* Contact */
+.contact-table {
+  font-size: 4vw;
+}
+
+.contact-table a {
+  text-decoration: none;
+}
+
+.icons {
+  padding-right: 2vw;
+  padding-left: 20vw;
+}
+
+.container-flex {
+  padding-top: 5%;
+}
+
+/* Updated */
+#updated {
+  font-size: 1.4vw;
+  text-align: center;
+  padding: 0;
+  margin-top: 2vh;
+}
+
+/* Media Queries */
+/* Tablet View */
+@media screen and (min-width: 768px) {
+
+  /* My Work */
+  .work-carousel {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    /* General Styling */
+    #nav-photos, #my-work {
+      background-color: black;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      padding: 7% 10% 5%;
+      height: 5%;
+    }
+
+    #about-me, #contact {
+      background-color: white;
+      font-family: "Poppins", sans-serif;
+      color: black;
+      padding: 7% 10% 5%;
+      height: 5%;
+    }
+
+    .title-header {
+      text-align: center;
+      font-weight: bold;
+      font-size: 5vw;
+      float: left;
+      margin-top: 20%;
+
+    }
+
+    .title-header:hover {
+      transform: scale(1.1);
+      color: #3175cf;
+    }
+
+    /* Nav Bar & Photos*/
+    #nav-photos {
+      padding-bottom: 5%;
+      padding-top: 2%;
+    }
+
+    .mr-logo {
+      width: 10%;
+    }
+
+    .title-name {
+      color: #3175cf;
+      font-size: 2.5vw;
+      width: 60%;
+      padding-top: 1%;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      white-space: nowrap;
+      align-items: center;
+      padding-left: 3.5vw;
+    }
+
+    .nav-item {
+      text-align: center;
+      font-size: 1.5vw;
+      white-space: nowrap;
+      right: 8%;
+    }
+
+    .work-nav {
+      padding-left: 3vw;
+    }
+
+    .contact-nav {
+      padding-left: 3vw;
+    }
+
+    #pictureCarousel {
+      visibility: hidden;
+      display: none;
+    }
+
+    .picture-collage {
+      visibility: visible;
+      display: block;
+      margin: auto 5%;
+      padding-bottom: 5%;
+    }
+
+    .picture:hover {
+      transform: scale(1.25);
+    }
+
+    #monitor-collage {
+      background-color: black;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    /* About Me */
+    .im-melanie {
+      color: #3175cf;
+      font-size: 2vw;
+    }
+
+    #about-me p {
+      font-size: 1.2vw;
+      padding: 5% 2%;
+      text-align: center;
+      color: #414242;
+      margin-left: 40%;
+    }
+
+    /* My Work */
+    #my-work {
+      padding-top: 10%;
+    }
+
+    .work-header {
+      padding-top: 0;
+      margin-top: 30vh;
+      position: absolute;
+    }
+
+    .work-text {
+      visibility: hidden;
+    }
+
+    .work-carousel {
+      visibility: visible;
+      overflow: visible;
+    }
+
+    #workCarousel {
+      width: 65%;
+      left: 13vw;
+      margin-left: 22%;
+      padding-bottom: 1%;
+    }
+
+    #workCarousel img {
+      margin-bottom: 25vh;
+      margin-top: 0%;
+
+    }
+
+    .phone-pictures {
+      pointer-events: none;
+      cursor: unset;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      margin-bottom: 2vh;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      overflow: visible;
+      justify-content: center;
+      margin: auto -15%;
+      text-align: center;
+      height: auto;
+      width: auto;
+    }
+
+    .carousel-caption p {
+      font-size: 1.5vh;
+    }
+
+    .carousel-caption h5 {
+      color: #3175cf;
+      font-size: 3vh;
+    }
+
+    .carousel-inner {
+      padding: 0;
+      margin: 0;
+    }
+
+
+    .carousel-control-next-icon {
+      margin-bottom: 17vh;
+    }
+
+    .carousel-control-prev-icon {
+      margin-bottom: 17vh;
+    }
+
+    /* Contact */
+    #contact {
+      padding-top: 7%;
+    }
+
+    .contact-table {
+      font-size: 3vw;
+      margin-left: 42%;
+      margin-top: 8%;
+    }
+
+    .contact-table a {
+      text-decoration: none;
+    }
+
+    .contact-table a:hover {
+      transform: scale(1.1);
+      color: #414242;
+      font-weight: bold;
+    }
+
+    .icons {
+      padding-right: 2vw;
+      padding-left: 0;
+    }
+
+    .container-flex {
+      padding-top: 5%;
+    }
+
+    .icons:hover {
+      transform: scale(1.1);
+      color: #3175cf;
+    }
+
+    /* Updated */
+    #updated {
+      font-size: 0.8vw;
+      margin-top: 7%;
+    }
+  }
+
+/* Computer Monitor View */
+/* Fixing captions under carousel */
+@media screen and (min-width: 1120px) {
+  #workCarousel img {
+    margin-bottom: 20vh;
+    margin-top: 0%;
+}
