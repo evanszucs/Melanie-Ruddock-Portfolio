@@ -124,14 +124,6 @@
   margin: 0;
 }
 
-.carousel-control-next-icon {
-  margin-bottom: 17vh;
-}
-
-.carousel-control-prev-icon {
-  margin-bottom: 17vh;
-}
-
 .carousel-indicators {
   position: absolute;
   padding-bottom: 215vh;
@@ -320,11 +312,7 @@
       margin: 0;
     }
 
-    .carousel-control-next-icon {
-      margin-bottom: 17vh;
-    }
-
-    .carousel-control-prev-icon {
+    .work-control-icon {
       margin-bottom: 17vh;
     }
 
