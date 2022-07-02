@@ -22,12 +22,14 @@
 .title-header {
   text-align: center;
   font-weight: bold;
-  font-size: 7vw;
+  font-size: 8vw;
 }
 
 /* Nav Bar & Photos*/
 #nav-photos {
   padding-top: 3%;
+  position: relative;
+  padding-bottom: 15%;
 }
 
 .mr-logo {
@@ -36,14 +38,13 @@
 
 .title-name {
   color: #3175cf;
-  font-size: 5.5vw;
+  font-size: 5vw;
   width: 60%;
-  padding-top: 2.5%;
+  padding-top: 3%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   white-space: nowrap;
   align-items: center;
-  margin-right: 7%;
 }
 
 .nav-item {
@@ -74,8 +75,8 @@
 }
 
 #about-me p {
-  font-size: 2.6vw;
-  padding: 5% 10%;
+  font-size: 3vw;
+  padding: 8% 5%;
   text-align: center;
   color: #414242;
 }
@@ -86,30 +87,70 @@
 }
 
 /* My Work */
-.carousel-caption {
-  bottom: 5vh;
-}
-
 .work-text {
   text-align: center;
-  font-size: 3vw;
+  font-size: 1.5vw;
   padding-top: 4%;
   color: #3175cf;
   font-weight: bolder;
 }
 
+#workCarousel img {
+  margin-bottom: 27vh;
+  margin-top: 0%;
+}
+
+.carousel-caption {
+  position: absolute;
+  justify-content: center;
+  margin: auto -15%;
+  text-align: center;
+  bottom: 5vh;
+  white-space: nowrap;
+}
+
+.carousel-caption p {
+  font-size: 1.5vh;
+}
+
+.carousel-caption h5 {
+  color: #3175cf;
+  font-size: 2.25vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-inner {
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-control-next-icon {
+  margin-bottom: 17vh;
+}
+
+.carousel-control-prev-icon {
+  margin-bottom: 17vh;
+}
+
+.carousel-indicators {
+  position: absolute;
+  padding-bottom: 215vh;
+}
+
 /* Contact */
 .contact-table {
-  font-size: 4vw;
+  font-size: 4.5vw;
 }
 
 .contact-table a {
   text-decoration: none;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .icons {
-  padding-right: 2vw;
-  padding-left: 20vw;
+  padding-right: 5vw;
+  padding-left: 12vw;
 }
 
 .container-flex {
@@ -125,14 +166,6 @@
 }
 
 /* Media Queries */
-/* Tablet View */
-@media screen and (min-width: 768px) {
-
-  /* My Work */
-  .work-carousel {
-    visibility: hidden;
-  }
-}
 
 @media screen and (min-width: 992px) {
     /* General Styling */
@@ -242,21 +275,13 @@
     /* My Work */
     #my-work {
       padding-top: 10%;
+      padding-bottom: 10%;
     }
 
     .work-header {
       padding-top: 0;
       margin-top: 30vh;
       position: absolute;
-    }
-
-    .work-text {
-      visibility: hidden;
-    }
-
-    .work-carousel {
-      visibility: visible;
-      overflow: visible;
     }
 
     #workCarousel {
@@ -267,32 +292,22 @@
     }
 
     #workCarousel img {
-      margin-bottom: 25vh;
+      margin-bottom: 30vh;
       margin-top: 0%;
-
-    }
-
-    .phone-pictures {
-      pointer-events: none;
-      cursor: unset;
     }
 
     .carousel-caption {
       position: absolute;
-      margin-bottom: 2vh;
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      overflow: visible;
       justify-content: center;
       margin: auto -15%;
       text-align: center;
-      height: auto;
-      width: auto;
+      bottom: 5vh;
+      white-space: nowrap;
+      padding-top: 50vh;
     }
 
     .carousel-caption p {
-      font-size: 1.5vh;
+      font-size: 2vh;
     }
 
     .carousel-caption h5 {
@@ -305,13 +320,17 @@
       margin: 0;
     }
 
-
     .carousel-control-next-icon {
       margin-bottom: 17vh;
     }
 
     .carousel-control-prev-icon {
       margin-bottom: 17vh;
+    }
+
+    .carousel-indicators {
+      position: absolute;
+      padding-bottom: 215vh;
     }
 
     /* Contact */
@@ -355,11 +374,3 @@
       margin-top: 7%;
     }
   }
-
-/* Computer Monitor View */
-/* Fixing captions under carousel */
-@media screen and (min-width: 1120px) {
-  #workCarousel img {
-    margin-bottom: 20vh;
-    margin-top: 0%;
-}
